@@ -1,0 +1,43 @@
+:root {
+  --primary: #0b1f33;
+  --secondary: #c9a45c;
+  --light: #f8f8f8;
+  --dark: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  background: var(--secondary);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
