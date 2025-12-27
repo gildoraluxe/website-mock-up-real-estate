@@ -1,0 +1,13 @@
+<h2>Bookings Dashboard</h2>
+<ul id="list"></ul>
+
+<script>
+const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+const list = document.getElementById("list");
+
+bookings.forEach(b => {
+  const li = document.createElement("li");
+  li.textContent = `${b.name} | ${b.service} | Score: ${b.score}`;
+  list.appendChild(li);
+});
+</script>
